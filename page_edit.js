@@ -885,7 +885,7 @@ function tryJumpPlayer() {
     if (player.inputState.jumpDown && player.isGrounded) {
       player.ignoreVerticalCollision = true;
     } else {
-      player.velocity.y = -8;
+      player.velocity.y = -20;
       player.leaveTheGround();
       player.hasJumped = true;
       game.playAudioIndex('sfxJump', 5);
